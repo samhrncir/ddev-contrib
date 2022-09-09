@@ -1,0 +1,6 @@
+# Sometimes we need to set the network's MTU to be different from the commonly defaulted 1500.
+# This situation commonly arises when working behind a VPN.
+networks:
+  default:
+    driver_opts:
+      com.docker.network.driver.mtu: 1440
